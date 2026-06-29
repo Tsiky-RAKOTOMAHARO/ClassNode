@@ -62,3 +62,113 @@ async function gererConnexion() {
     </div>
   </div>
 </template>
+
+<style scoped>
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-page);
+}
+
+.login-card {
+  width: 420px;
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-surface-border);
+}
+
+.login-icon {
+  font-size: 36px;
+}
+
+.login-title {
+  font-size: var(--text-display);
+  font-weight: 700;
+  color: var(--color-primary-600);
+  letter-spacing: -0.5px;
+}
+
+.login-subtitle {
+  font-size: var(--text-md);
+  color: var(--color-text-tertiary);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field-label {
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.field-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-subtle);
+  font-size: var(--text-md);
+  font-family: var(--font-mono);
+  color: var(--color-text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field-input:focus {
+  border-color: var(--color-surface-border-focus);
+  background: var(--color-surface-card);
+}
+
+.error-msg {
+  font-size: var(--text-md);
+  color: #DC2626;
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-primary-600);
+  color: var(--color-text-inverse);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--text-md);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.submit-btn:hover {
+  background: var(--color-primary-800);
+}
+</style>

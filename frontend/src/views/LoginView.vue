@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useAuthStore } from '../store/auth'
+import { useAuthStore } from '../stores/authStore'
 
 const authStore = useAuthStore()
 const router = useRouter()
@@ -22,8 +22,8 @@ async function gererConnexion() {
     <div class="login-card">
 
       <div class="login-header">
-        <img src="../assets/img/education.png" class="login-icon" width="24" height="24">
-        <h1 class="login-title">GestTeach</h1>
+        <!-- <img src="../assets/img/education.png" class="login-icon" width="24" height="24"> -->
+        <h1 class="login-title">ClassNode</h1>
         <!-- <p class="login-subtitle">Panneau de gestion</p>  -->
       </div>
 

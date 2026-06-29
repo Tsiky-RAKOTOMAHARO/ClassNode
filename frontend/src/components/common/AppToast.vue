@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue'
-import { useEtudiantStore } from '@/store/etudiant'
+import { useEtudiantStore } from '@/stores/etudiantStore'
 
 const store = useEtudiantStore()
 const visible = ref(false)

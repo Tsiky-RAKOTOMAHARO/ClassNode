@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { useAuthStore } from '../store/auth.js'
+import { useAuthStore } from '../stores/authStore.js'
 import LoginView from '../views/LoginView.vue'
 import ListView from '../views/ListView.vue'
 import CreateView from '../views/CreateView.vue'
@@ -37,11 +37,11 @@ const router = createRouter({
 router.beforeEach((to) => {
   const auth = useAuthStore()   
 
-  if (to.meta.requiresAuth && !auth.estConnecte) {
+  if (to.meta.requiresAuth && !auth.isAuthenticated)  {
     return '/login'
   }
 
-  if (to.path === '/login' && auth.estConnecte) {
+  if (to.meta.requiresAuth && !auth.isAuthenticated)  {
     return '/'
   }
 })

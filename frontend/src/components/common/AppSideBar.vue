@@ -14,28 +14,28 @@ function gererDeconnexion() {
 <template>
   <div class="sidebar">
     <div class="sidebar-brand">
-      <!-- <img src="../../assets/img/education.png" class="brand-icon" width="24" height="24"> -->
+      <img src="../../assets/img/education.png" class="brand-icon" width="24" height="24">
       <span class="brand-name">ClassNode</span>
     </div>
 
     <nav class="sidebar-nav">
       <RouterLink to="/create" class="nav-item">
-        <span class="nav-icon icon-add"></span>
+        <img src="../../assets/img/add.svg" class="nav-icon icon-add">
         <span>Ajout</span>
       </RouterLink>
       <RouterLink to="/list" class="nav-item">
-        <span class="nav-icon icon-list"></span>
+        <img src="../../assets/img/list.svg" class="nav-icon icon-add">
         <span>Liste</span>
       </RouterLink>
       <RouterLink to="/stats" class="nav-item">
-        <span class="nav-icon icon-stats"></span> 
+        <img src="../../assets/img/pieChart.svg" class="nav-icon icon-add">
         <span>Bilan</span>
       </RouterLink>
     </nav>
 
     <div class="sidebar-footer">
       <button @click="gererDeconnexion" class="logout-btn">
-        <span class="logout-icon"></span>
+        <img src="../../assets/img/logout.svg" class="logout-icon">
         <span>Déconnexion</span>
       </button>
     </div>
